@@ -45,7 +45,9 @@ export async function POST(request: NextRequest) {
     // Using 'python3' explicitly. Ensure it's available in the environment.
     // For Next.js, the environment should handle Python execution for `type="script"` files.
     // Here, we are invoking it as a child process.
-    const pythonProcess = spawn("python3", [scriptPath])
+    const pythonPath = path.join(process.cwd(), ".venv", "Scripts", "python.exe")
+const pythonProcess = spawn(pythonPath, [scriptPath])
+
 
     let stdoutData = ""
     let stderrData = ""

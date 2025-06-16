@@ -1,0 +1,26 @@
+# 深度学习和计算机视觉相关依赖
+torch>=2.0.0
+torchvision>=0.15.0
+ultralytics>=8.0.0
+
+# 图像处理依赖
+opencv-python>=4.8.0
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# 系统和工具依赖
+scipy>=1.10.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+
+# Web服务相关（如果需要Flask/FastAPI等）
+# flask>=2.3.0
+# fastapi>=0.100.0
+# uvicorn>=0.23.0
+
+# 数据处理
+pandas>=2.0.0
+
+# 其他常用工具
+requests>=2.31.0
+pyyaml>=6.0

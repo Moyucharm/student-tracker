@@ -4,6 +4,7 @@ import base64
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
 
+
 # Simulated detections: [x_min, y_min, x_max, y_max], label, color, description
 SIMULATED_DATA = [
     {
@@ -37,7 +38,7 @@ def process_image(base64_image_string):
         
         # Attempt to load a font, fallback to default if not found
         try:
-            font = ImageFont.truetype("arial.ttf", 15)
+            font = ImageFont.truetype("simhei.ttf", 15)
         except IOError:
             font = ImageFont.load_default()
 
@@ -80,6 +81,8 @@ def process_image(base64_image_string):
         }
 
 if __name__ == "__main__":
+    
+
     # Read base64 image string from stdin
     base64_input = sys.stdin.read()
     result = process_image(base64_input)
